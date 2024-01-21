@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       .card ul{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color: #100e0e;
+           color: aliceblue;
+           padding: 20px;
+           top: 0%;
+        
+        }
+        ul li{
+            padding: 20px;
+            list-style: none;
+            position: relative;
+        }
+        ul li:hover{
+           cursor: pointer;
+           color: darkgoldenrod;
+           transition: 3s;
+        }
+       ul li:hover::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;  /* example1*/
+    background-color: #95db5b;
+    top: 0px; 
+       }
+      
+        p{
+            font-size: 50px;
+            padding: 50px;
+            margin-left: 100px;
+            font-weight: bold;
+      }
+     body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYNlsOkxJRUIfw4SyPcjNExTnnZuSMq07A5Q&usqp=CAU");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: content;
+            min-height: 200vh;
+           
+           }
+           button{
+            padding: 20px;
+            width: 200px;
+            background-color: #eedb0e;
+           margin-left: 200px;
+           font-size: 20px;
+           }
+           button:hover{
+            cursor:pointer;
+            border: 1px solid rgb(243, 224, 224);
+            background-color: #0b0b0b;
+            color: #e8cbcb;
+            transition: 1s;
+           }
+           .content{
+            background-color: #050404;
+            color: #fff;
+            margin-top: 100px;
+         }
+          h2{
+           margin-left: 100px;
+           padding: 50px;
+           margin-top: 100px;
+         }
+         .content p{
+            font-size: 50px;
+            margin-left: 100px;
+            font-weight: bold;
+          }
+     </style>
+</head>
+<body>  
+    <div class="card">
+<ul>
+    <li>HOME</li>
+    <li>ABOUT</li>
+    <li>CONNECT</li>
+    <li>RESOURCES</li>
+    <li>GIVE</li>
+    <li>CONTACT</li>
+</ul>
+<p>WE’RE A COMMUNITY <br>
+    CHURCH WITH A <br>
+GLOBAL VISION. </p>
+<button>CONTACT US</button>
+</div>
+<section class="content">
+<h2>LIVE LIFE TO <br>
+    THE FULLEST
+    </h2>
+    <p>To see people encounter God and live life to the fullest.</p>
+</section>
+</body>
+</html>
