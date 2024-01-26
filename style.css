@@ -44,8 +44,7 @@
     cursor: pointer;
 }
 .about{
-   
-    background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/6423feb872285f738e2732f7/pexels-fauxels-3184405copy.jpg");
+   background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/6423feb872285f738e2732f7/pexels-fauxels-3184405copy.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -59,7 +58,7 @@ font-size: 50px;
 margin-top: 700px;
 }
 h1{
-    line-height: 5px;
+    line-height: 2;
 }
 p{
     font-size: 20px;
@@ -74,7 +73,7 @@ button{
     border: none;
     width: 300px;
     margin-top: 15px;
-    font-size: 30px;
+    font-size: 25px;
 }
 button:hover{
     cursor: pointer;
@@ -92,20 +91,129 @@ button:hover{
     margin-left: 800px;
    margin-top: 800px;
    position: absolute;
-   font-size: 25PX;
+   font-size: 30PX;
    color: #fff;
+   gap: 10px;
    letter-spacing: 5px;
+   transition: 2s;
+  transform: translate(200px);
+}
+
+
+.circle:hover  div {
+    color: #fff;
 }
 .circle:hover{
     cursor: pointer;
-    color: black;
+    color: black !important;
+   
 }
 .major h1{
-    font-size: 20px;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    font-size: 3rem;
+    line-height: 1.5;
     color: black;
-    width: 50%;
+    margin-top: 40px;
+    padding: 30px;
     
 }
+.major-list{
+    padding: 20px;
+}
+.major-list ul{
+    list-style-image: url('./menu.png');
+    column-width: 500px;
+    padding: 40px;
+    column-gap: 30px
+}
+.major-list ul li{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    margin-bottom: 40px;
+   
+}
+.circle2{
+    width: 350px;
+    height: 350px ;
+    border-radius: 100%;
+    background-color: #ffd900ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: #fff;
+    margin-left: 70%; 
+    position: absolute;
+    
+}
+
+
+ .hero{
+    position: relative;
+} 
+.hero h3{
+    font-size: 3rem;
+    margin-left: 90px;
+    position: absolute;
+    top: 140px;
+    
+   
+ 
+}
+.price-card{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    column-width: 500px;
+    column-gap: 80px;
+    margin-top: 350px;
+    margin-left: 40px;
+}
+.card1, .card2, .card3, .card4{
+    list-style-position: inside;
+}
+.card1 ul li, .card2 ul li, .card3 ul li, .card4 ul li{
+    list-style-type:square;
+    padding: 0px 70px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.card2 h1,.card4 h1,.card1 h1{
+    color:#000;
+}
+.card3 ul li, h1{
+    color: #fff;
+}
+.card1 h1, .card2 h1, .card3 h1, .card4 h1{
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.card1 h2, .card2 h2, .card3 h2, .card4 h2{
+    display: flex;
+    justify-content: center;
+    font-size: 4.5rem;
+    color: #e2c312ea;
+}
+.btn{
+    background-color: #ffd900ea;
+    color: #fff;
+    width: 250px;
+    padding: 10px;
+}
+.card1{
+    background-color: lightgray;
+    min-height: 40vh;
+}
+.card2, .card4{
+    background-color: #fff;
+    min-height: 40vh;
+}
+.card3{
+    background-color: #6ae168cb;
+    min-height: 40vh;
+}
+
  
