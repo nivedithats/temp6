@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card1 img{  
+            width: 100%;
+            
+           
+            
+            }
+            .card1{
+                width:400px;
+                height: fit-content !important;
+                box-shadow: 20px 20px 30px #d1d1d1;
+                position: relative;
+                background-color: #fff;
+                border-radius: 20px;
+                border: 1px solid #000;
+            }
+            .card1::before{
+                content: "";
+                position: absolute;
+                width: 80%;
+                height: 20px; 
+                background-color: #d1d1d1;
+                z-index: -1;
+                transform:skewX(-25deg) translateY(-30px);
+                
+            }
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+               
+            }
+            .card1  p{
+                position: absolute;
+                
+            
+                font-size: 1.1rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: rgba(69, 69, 223, 0.523);
+                padding:  40px 30px;
+                color: #fff;
+            }
+        
+        
+        
+
+        
+
+    </style>
+</head>
+<body>
+   
+    
+    <div class="card1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGk-YZdh775h2YMh2dm1IndsuwgwWiDnGIKFg89enNZKEFspwNtG7Kou0xtPugflsmhIU&usqp=CAU"  alt="">
+
+        <p> Spectur <br>
+        We were struggling to get our new 
+        application off the ground,but AppPad
+        was so helpful to set everything up,great
+        support team,and overall an awesome
+        experience from start to finish.
+    </p>
+ </div>  
+
+</body>
+</html>

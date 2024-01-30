@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#b4e8fb;
+        }
+         .card{
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        } 
+        .card-body{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              border-radius: 30px;
+              box-shadow: 7px 7px 1px #9ce1fa;
+              background-color: #fff;
+        }
+        .button{
+            position: absolute;
+            width: 10%;
+            height: 5%;
+            background-color: #ca1f4a;
+            top: -4%;
+            left: 14%;
+            border-top: 7px;
+            border-bottom: 7px;
+            
+        }
+        .flash{
+            position: absolute;
+            width: 25%;
+            height: 15%;
+            background-color: #324b5e;
+            top: -14%;
+            left: 55%;
+            transform: translateX(-50%);
+            border-bottom: 8px;
+
+        }
+        .flash:after{
+            content: "";
+            position: absolute;
+            width: 35%;
+            height: 75%;
+            background-color: #7499b5;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-40%);
+            border-radius: 4px;
+
+        }
+        .blinker{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #213046;
+            left: 15%;
+            top: 15%;
+            border-radius: 50%;
+            
+            
+        }
+        .zoom{
+            position: absolute;
+            width: 59%;
+            height: 80%;
+             background-color: #20303e; 
+            top: 10%;
+            left: 25%;
+            border-radius: 50%;
+            border: 4px solid #253848;
+            box-shadow: 7px 7px 1px rgba(0,0,0,0.1);
+            z-index: 2;
+            overflow: hidden;
+          }
+          .zoom:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,255,255,0.20);
+            transform: translate(-35%,-35%) rotate(45deg);
+          }
+        .outer-lens{
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            background-color: #293d4f;
+            border: 7px solid #314a60;
+
+        }
+        .inner-lens{
+            position: absolute;
+            width: 35%;
+            height: 35%;
+            background-color: #20303e;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+
+        }
+        .inner-lens:after{
+            content: "";
+            position: absolute;
+            width: 25%;
+            height: 25%;
+            background-color: #314a60;
+            border-radius: 50%;
+            left: 50%;
+            right: 10%;
+            
+
+        }
+        .stripes{
+            position: absolute;
+            width: 50%;
+            height: 15%;
+            background-color: #ca05b66;
+            background:linear-gradient(180deg,#ca0b66 0%,#ca0b66 16.667%,#e5900f 16.667%,#e5900f 33.333%,#f2ce25 50%,#dee96a 50%,#dee96a 66.667%,#3da23e 66.667%,#3da23e 83.333%,#2e88bc 83.333%);
+            top: 40%;
+            right: 0%;
+            transform:translateY(50%);
+            z-index: 0;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body"></div>
+        <div class="button"></div>
+        <div class="flash"></div>
+        <div class="blinker"></div>
+        <div class="zoom">
+            <div class="outer-lens"> </div> 
+                <div class="inner-lens"></div>
+            </div>
+           <div class="stripes"></div>
+        </div>
+
+        
+        
+    
+        
+</body>
+</html>

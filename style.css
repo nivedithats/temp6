@@ -97,6 +97,15 @@ button:hover{
    letter-spacing: 5px;
    transition: 2s;
   transform: translate(200px);
+  animation: m 1s linear ;
+} 
+@keyframes  m{
+    from{
+        transform: translateX(400px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
 
 

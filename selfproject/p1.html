@@ -3,21 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+        }
+        .grad{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image:repeating-conic-gradient(red,yellow 10deg,green 20deg,blue 40deg);
+        }
+        .grad1{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: repeating-linear-gradient(red 10%,yellow 20%,green 10%);
+            
+        }
+        .grad2{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: repeating-linear-gradient(orange,white,green);
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <video src=""></video>
-        <h1><b>MUSIC</b></h1>
-        <h2>FESTIVAL</h2>
-        <h3>BEST MUSIC FESTIVAL OF THE YEAR</h3>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempore delectus repellat sunt, provident, in officia deserunt quas assumenda ab, id dolores repudiandae laboriosam. Consequuntur repellat rerum error exercitationem quis?</P>
-
-        <i class="fa-brand fa-instagram"></i>
-        <i class="fa-brand fa-facebook" ></i>
-        <i class=""></i>
-    </div>
-
+    <section class="container">
+        
+    <div class="grad"></div>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+</section>
 </body>
 </html>
