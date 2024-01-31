@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectur</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box; 
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            /* background-color: aqua; */
+        }
+        .box{
+            position:relative;
+            /* transform: translate(50%, 50%); */
+            transform: skew(-6deg);
+            /* box-shadow: 30px 40px 30px #313030; */
+        }
+        .box::after{
+            content: "";
+            position: absolute;
+            transform: rotate(-12deg);
+            /* box-shadow: 10px 40px 30px rgba(0, 0, 0, 0.189); */
+            height: 100%;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            border-radius: 10px;
+            z-index: -1;
+          background-color: rgba(150, 215, 215, 0.452);
+
+        }
+        img{
+            border-radius:  10px 10px 0px 0px;
+        }
+        .card{
+            width: 300px; 
+            height: 200px;
+            background-color: rgba(0, 0, 255, 0.532);
+            color: aliceblue;
+            border-radius: 0px 0px  10px 10px;
+            transform: translateY(-4px);
+        }
+        h1{
+            margin-top: 0px;
+            padding: 10px;
+        }
+        p{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+     <div class="box">
+        <img src="https://www.liveabout.com/thmb/EI7lDxcuIvKqc1PlEiTkQXpWbPk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/young-web-designers-working-together-at-modern-office-1199690908-b20452b370ef4a36873d2b62fbd244c1.jpg" alt="image" width="300px" height=200px>
+        <div class="card">
+        <h1>Spectur</h1>
+        <p>We were struggleling o get our new
+            application off the ground. but AppPad
+            was so helpful to set everything up, great support team,
+            and overall an awesome experience from start to finish..
+        </p>
+        </div>
+     </div>
+</body>
+</html>

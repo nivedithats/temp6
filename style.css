@@ -215,14 +215,71 @@ button:hover{
 .card1{
     background-color: lightgray;
     min-height: 40vh;
+    animation:  p 2s linear ;
+
+}
+@keyframes p{
+    from{
+       transform: translateX(-500px);
+    }
+    to{
+       transform: translateX(0px);
+    }
 }
 .card2, .card4{
     background-color: #fff;
     min-height: 40vh;
 }
 .card3{
-    background-color: #6ae168cb;
+    background-color: #10ae0dac;
     min-height: 40vh;
+    
+    
+}
+.card4 {
+    animation: n 4s linear;
+}
+@keyframes n{
+         from{
+            transform: translateX(500px);
+         }
+         to{
+            transform: translateX(0px);
+         }
+}
+.card2{
+    animation: s 2s linear;
+}
+@keyframes s{
+    from{
+       transform: translateX(-500px);
+    }
+    to{
+       transform: translateX(0px);
+    }
+}
+
+
+/* .figures img{
+    width: 400px;
+    height: 400px;
+    padding: 8px 10px 8px 10px;
+    text-align: center;
+    padding: 10px;
+}
+.figures img:hover{
+cursor: pointer;
+transform: scale(0.8);
+} */
+.profile{
+    position: relative;
+}
+.profile h2{
+color: #000;
+position: absolute;
+margin-left: 100px;
+margin-top: 50px;
+font-size: 4rem;
 }
 
  
