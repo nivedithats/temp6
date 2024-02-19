@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .card{
+            min-height: 80vh;
+            max-height: 80vh;
+            background: #000;
+            width: 100%;
+            color: #fff;
+            
+        }
+.card-text{
+    padding: 30px;
+    max-height: fit-content;
+}
+    .heading{
+        font-size: 3rem;
+    }
+    .subtitle{
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+        .card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (max-width:768px){
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card card-text">
+            <h1 class="heading">10 Things You Need to Stop Doing to Start Living a Happier Life</h1>
+            <p class="subtitle">
+                When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us.
+            </p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMUN72DpxRD2tLzpUaN8iiwUpOpiz-A0tL8hy-iSZtuSquJDiU" alt="">
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMUN72DpxRD2tLzpUaN8iiwUpOpiz-A0tL8hy-iSZtuSquJDiU" alt="">
+        </div>
+        <div class="card card-text">
+            <h1 class="heading">10 Things You Need to Stop Doing to Start Living a Happier Life</h1>
+            <p class="subtitle">
+                When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us.
+            </p>
+        </div>
+    </section>
+</body>
+</html>

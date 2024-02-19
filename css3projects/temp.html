@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            padding: 4%;
+        }
+        .container-top{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .heading{
+            font-size: 2rem;
+        }
+        .subtitle{
+            line-height: 1.6;
+            color: #5a5a5a;
+            font-size: 1.3rem;
+        }
+        .icon{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: rgb(254, 93, 101);
+            margin-bottom: 10px;
+            
+        }
+        .card{
+            padding:30px  20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px #ccc;
+            /* margin-bottom: 20px; */
+        }
+        .card h1{
+            font-size: 1.5rem;
+        }
+        .card p{
+            font-size: 1.2rem;
+            color: #838383;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .card-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 50px;
+            gap: 20px;
+        }
+        .card:nth-child(even){
+            background-color: rgb(255, 0, 21);
+            color: #fff;
+        }
+        .card:nth-child(even) p{
+            color: #fff;
+        }
+        center button{
+            padding: 15px;
+            min-width: 150px;
+            background-color: rgb(255, 0, 21);
+            color: #fff;
+            text-transform:uppercase;
+            letter-spacing: 1.5px;
+            font-size: 1.3rem;
+            border: none;
+            margin-top: 30px;
+        }
+        .card-header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        @media (max-width:768px){
+            .mobile{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="container-top mobile">
+            <div class="top-card">
+                <h1 class="heading">We help and solve your business problem</h1>
+            </div>
+            <div class="top-card">
+                <p class="subtitle">Uniquely unleash client-centered relationships and world-class alignments Compellingly impact premier enterprise quality vectors whereas client has functionalities. Seamlessly benchmark</p>
+            </div>
+        </div>
+        <div class="card-container mobile">
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon"></div>
+                </div>
+                <h1>UNLIMITED STORAGE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon"></div>
+                </div>
+                <h1>UNLIMITED STORAGE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon"></div>
+                </div>
+                <h1>UNLIMITED STORAGE</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            </div>
+        </div>
+        <center>
+            <button>read more</button>
+        </center>
+    </section>
+    
+</body>
+</html>
